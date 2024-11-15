@@ -1,0 +1,114 @@
+:root {
+  /* ---------------------------------------------- Variable COLOR --------------------------------------------- */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --connCorp-color-default-background: #3ac741;
+
+  --connCorp-color-body-background: #b9afaf;
+  --connCorp-color-body-font: #000000;
+
+  /* ------------------------------------------------ OutDoor --------------------------------------------- */
+  --connCorp-color-outdoor-background: #912020;
+  --connCorp-color-outdoor-font: #722acf;
+
+  /* ------------------------------------------------ Form --------------------------------------------- */
+  --connCorp-color-form-background: rgb(51, 146, 201);
+  --connCorp-color-form-font: rgb(70, 70, 80);
+
+  --connCorp-color-form-msg-error: #FF0000;
+}
+
+/* ------------------------------------------------ Global Config --------------------------------------------- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------------------------------ Element Config --------------------------------------------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--connCorp-color-body-background);
+}
+
+aside {
+  height: 100%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #3ac741;
+  border-radius: 5px;
+}
+
+/* ------------------------------------------------ Atributes Config --------------------------------------------- */
+.container {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  width: 100vw;
+  height: 100vh;
+  background-color: #722acf;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--connCorp-color-form-background);
+  color: var(--connCorp-color-form-font);
+  border-radius: 5px;
+}
+
+.connCorp-form {
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  height: 70%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.connCorp-box {
+  width: 90%;
+  height: 20%;
+}
+
+.connCorp-box label {
+  color: var(--connCorp-color-form-msg-error);
+}
+
+.container-teste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1366px;
+  height: 700px;
+}
+
+.container-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+}
+
+.container-buttons button {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px;
+}
+
+.mb-20 {
+  margin-bottom: 40px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
